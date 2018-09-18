@@ -5,13 +5,29 @@
         <meta charset="UTF-8">
 
         <title>CS3-InClass</title>
-        <style type="text/css"></style>
+        <style type="text/css">
+        table {
+            border: 3px solid navy;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-right: auto;
+            margin-left:auto;
+            background-color: azure;
+            width: 75%;
+        }
+        td {
+            border: 2px  solid navy;
+            text-align: center;
+        }
+        td.width {
+            width: 20%;
+        }
+        </style> 
 </head>
     
 <body>
     <table>
         <caption>Bread</caption>
-        <tr><td>Product Code</td><td>Product Description</td><td>Price</td></tr>
+        <tr><td class="width">Product Code</td><td>Product Description</td><td class="width">Price</td></tr>
         <tr><td>001</td><td>Loaf of Sourdough Bread</td><td>$4.99</td></tr>
         <tr><td>002</td><td>Baguette</td><td>$3.99</td></tr>
         <tr><td>003</td><td>Pack of 6 English Muffins</td><td>$4.99</td></tr>

@@ -3,6 +3,7 @@ table {
     margin-right: auto;
     margin-left: auto;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
 }
 tr, td {
     border: 1px solid black;
@@ -11,4 +12,19 @@ tr, td {
 }
 img {
     width: 100%;
+}
+td#image {
+    width: 70%;
+}
+td#last {
+    width: 30%;
+}
+th#caption {
+    width: 70%;
+}
+td.35 {
+    width: 35%;
+}
+body {
+    background-image: url("../Images/music.gif")
 }

@@ -18,6 +18,7 @@ td#image {
 }
 td#last {
     width: 30%;
+    overflow: scroll;
 }
 th#caption {
     width: 70%;
@@ -26,5 +27,13 @@ td.35 {
     width: 35%;
 }
 body {
-    background-image: url("../Images/music.gif")
+    background-image: url("../Images/tiger1.jpg");
+}
+p.scroll {
+    background-color: lime;
+    width: 250px;
+    height: 300px;
+    overflow: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
 }

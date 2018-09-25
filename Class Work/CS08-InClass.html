@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<title>CS08-InClass</title>
+<style type="text/css">
+    h1 {
+        color:navy;
+        font-family: lucida bright;
+        text-align: center;
+    }
+    p {
+        color:navy;
+    }
+    form {
+        background-color: silver;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       padding-left: 100px;
+       padding-right: 50px;
+       margin-top: 50px;
+       margin-bottom: 50px;
+       margin-left: 100px;
+       margin-right: 100px;
+       font-family: Arial, Helvetica, sans-serif;
+       text-emphasis-color: navy;
+
+    }
+</style>
+
+</head>
+
+<body>
+<h1>Web Forms - CS08 - InClass</h1>
+
+<form method="POST" action="mailto:aglaubitz1@babson.edu">
+    <p>Last Name:<input type="text" name="lastname" maxlength="25" size="25">First Name:<input type="text" name="firstname" maxlength="25" size="25"></p>
+    <p>Gender: Male<input type="radio" name="gender" value="male">Female<input type="radio" name="gender" value="female" checked="checked"></p>
+    <p>My Favorite Web Tech Topics Are:<br>
+        <input type="checkbox" name="webtechtopics" value="1">Basic HTML<br>
+        <input type="checkbox" name="webtechtopics" value="2">CSS<br>
+        <input type="checkbox" name="webtechtopics" value="3">Tables<br>
+        <input type="checkbox" name="webtechtopics" value="3">FORMS<br>
+    </p>
+    <p>Select your Favorite Color:
+        <input type="color" name="favcolor">
+    </p>
+    <p>Select the Date: <input type="date" name="todaysdate"></p>
+
+    <p>What is your major?
+        <select name="major">
+            <option value="Marketing">Marketing</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Finance">Finance</option>
+            <option value="Operations">Operations</option>
+            <option value="Other">Other</option>
+        </select>
+    </p>
+
+    <p>Any Additional Comments:</p>
+    <p><textarea name="comments" rows="5" cols="29"></textarea></p>
+
+    <p><input type="submit" name="submit" value="Submit"><input type="reset" name="reset" value="Reset"></p>
+</form>
+
+</body>
+
+</html>

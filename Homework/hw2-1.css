@@ -1,0 +1,43 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px, black, solid;
+}
+
+td {
+    border: 2px, solid, black;
+}
+
+th#heading {
+    font-size: xx-large;
+    color: navy;
+}
+
+td#description {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    background-color: white;
+}
+
+tr#yellow {
+    background-color: yellow;
+}
+
+td#gray {
+    background-color: silver;
+}
+
+td#green {
+    background-color: lime;
+}
+
+img {
+    width: 40%;
+    padding: 5px;
+}

@@ -38,6 +38,14 @@ td#green {
 }
 
 img {
-    width: 40%;
-    padding: 5px;
+    width: 90%;
+    height: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+td#width {
+    width: 35%;
 }

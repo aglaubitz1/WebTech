@@ -6,11 +6,11 @@ table {
     margin-right: 15%;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 3px, black, solid;
+    border: 3px black solid;
 }
 
 td {
-    border: 2px, solid, black;
+    border: 2px solid black;
 }
 
 th#heading {

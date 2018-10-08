@@ -23,7 +23,7 @@
                 <input type="radio" name=color value=Gold>Gold (shown)<br>
                 <input type="radio" name=color value=Red>Red
             </td>
-            <td>At $5/unit<br>
+            <td>At $5.00/unit<br>
                 <select name="buy">
                         <option value="5">Definitely Buy</option>
                         <option value="4">Likely Buy</option>
@@ -32,6 +32,58 @@
                         <option value="1">Not Buy</option>
                     </select>
             </td>
+            <td>
+                <input type="checkbox" name=features value=Shape>Shape<br>
+                <input type="checkbox" name=features value=Size>Size<br>
+                <input type="checkbox" name=features value=Smell>Smell<br>
+                <input type="checkbox" name=features value=Texture>Texture
+            </td>
+        </tr>
+            
+        <tr>
+            <td><img src="soap-1.jpg"></td>
+            <td>
+                <input type="radio" name=color value=Ivory>Ivory<br>
+                <input type="radio" name=color value=Sandalwood>Sandal Wood (shown)<br>
+                <input type="radio" name=color value=Pink>Pink
+            </td>
+            <td>At $8.00/unit<br>
+                <select name="buy">
+                        <option value="5">Definitely Buy</option>
+                        <option value="4">Likely Buy</option>
+                        <option value="3">Undecided</option>
+                        <option value="2">Unlikely Buy</option>
+                        <option value="1">Not Buy</option>
+                    </select>
+            </td>
+            <td>
+                <input type="checkbox" name=features value=Shape>Shape<br>
+                <input type="checkbox" name=features value=Size>Size<br>
+                <input type="checkbox" name=features value=Smell>Smell<br>
+                <input type="checkbox" name=features value=Texture>Texture
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Tell us about yourself...</td>
+        </tr>
+
+        <tr>
+            <td>Gender:
+                <select name="gender">             
+                <option value="Male">Male</option>
+                <option value="female">Female</option>
+                </select>
+            </td>
+            <td colspan="3"><p>Age: (under 25 enter 1, 25-40 enter 2, else enter 3)<input type="text" name="age" maxlength="3" size="5"></p></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                Your comments are welcome:<br>
+                <input type="text" name="comments" maxlength="300" height="15" width="50">
+            </td>
+            <td colspan="2"><input type="Submit" value="Done" name="Done"><input type="reset" value="Oops" nmae="Oops"></td>
         </tr>
     </table>
 </body>

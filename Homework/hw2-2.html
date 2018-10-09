@@ -3,13 +3,54 @@
 <head>
 <title>CS08-InClass</title>
 <style type="text/css">
+body {
+    background-color: black;
+}
+
+h1 {
+    size: 3em;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+table {
+    background-color: silver;
+    margin-right: auto;
+    margin-left: auto;
+    width: fixed;
+    border: black solid;
+}
+
+td {
+    border: black solid;
+}
+
+td#buttons {
+    text-align: center;
+}
+
+td#yourself {
+    text-align: center;
+    background-color: white;
+}
+
+tr#headings {
+    text-align: center;
+}
+
+img {
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 90px;
+    height: 70px;
+}
 </style>
 </head>
 
 <body>
     <h1>Soap Survey</h1>
     <table>
-        <tr>
+        <tr id="headings">
             <td>Soap Image</td>
             <td>Soap Color Preference</td>
             <td>Soap Purchase Intent</td>
@@ -65,14 +106,14 @@
         </tr>
 
         <tr>
-            <td colspan="4">Tell us about yourself...</td>
+            <td colspan="4" id="yourself">Tell us about yourself...</td>
         </tr>
 
         <tr>
             <td>Gender:
                 <select name="gender">             
-                <option value="Male">Male</option>
-                <option value="female">Female</option>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
                 </select>
             </td>
             <td colspan="3"><p>Age: (under 25 enter 1, 25-40 enter 2, else enter 3)<input type="text" name="age" maxlength="3" size="5"></p></td>
@@ -81,9 +122,9 @@
         <tr>
             <td colspan="2">
                 Your comments are welcome:<br>
-                <input type="text" name="comments" maxlength="300" height="15" width="50">
+                <textarea rows="7" size="50" maxlength="200"></textarea>
             </td>
-            <td colspan="2"><input type="Submit" value="Done" name="Done"><input type="reset" value="Oops" nmae="Oops"></td>
+            <td colspan="2" id="buttons"><input type="Submit" value="Done" name="Done"><input type="reset" value="Oops" nmae="Oops"></td>
         </tr>
     </table>
 </body>

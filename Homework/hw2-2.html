@@ -44,6 +44,20 @@ img {
     width: 90px;
     height: 70px;
 }
+
+input#oops {
+    background-color: red;
+}
+
+input#yellow {
+    background-color: yellow;
+
+}
+
+br#space {
+    line-height: 250%;
+}
+
 </style>
 </head>
 
@@ -52,8 +66,8 @@ img {
     <table>
         <tr id="headings">
             <td>Soap Image</td>
-            <td>Soap Color Preference</td>
-            <td>Soap Purchase Intent</td>
+            <td>Soap Color <br>Preference</td>
+            <td>Soap Purchase <br>Intent</td>
             <td>Soap Features Liked</td>
         </tr>
 
@@ -116,15 +130,17 @@ img {
                 <option value="1">Female</option>
                 </select>
             </td>
-            <td colspan="3"><p>Age: (under 25 enter 1, 25-40 enter 2, else enter 3)<input type="text" name="age" maxlength="3" size="5"></p></td>
+            <td colspan="3"><p>Age: (under 25 enter 1, 25-40 enter 2, else enter 3)<input type="text" name="age" maxlength="3" size="5" id="yellow"></p></td>
         </tr>
 
         <tr>
             <td colspan="2">
                 Your comments are welcome:<br>
-                <textarea rows="7" size="50" maxlength="200"></textarea>
+                <input type="text" rows="10" size="15" id="yellow">
             </td>
-            <td colspan="2" id="buttons"><input type="Submit" value="Done" name="Done"><input type="reset" value="Oops" nmae="Oops"></td>
+            <td colspan="2" id="buttons"><input type="Submit" value="Done" name="Done">               <input type="reset" value="Oops" nmae="Oops" id="oops"></td>
         </tr>
     </table>
+<br id="space">
+    <div style="background: url(beaver.jpg) repeat-x"><img src="beaver.jpg"></div>
 </body>

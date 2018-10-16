@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Web Technologies - Your Name </title>
+        <script type="text/javascript">
+                function ask() {
+                        // alert("testing");
+                        // let message = prompt("What day is it today?");
+                        // document.getElementById("userInput").innerHTML = message;
+
+                        // let name=prompt("What is your name?")
+                        // if ((message=="Tuesday") || (name=="Zhi")) {
+                        //         document.getElementById("result").innerHTML = "correct!";
+                        // }
+                        // alert("How are you today?");
+
+                        let x = prompt("What is your gender?")
+                        if (x.toLowerCase() == "male" || x.toLowerCase() == "man") {
+                                document.getElementById("userInput").innerHTML = x;
+                                document.getElementById("result").innerHTML="Hello Sir! How old are you?";
+
+                                document.getElementById("image1").src = "Images/tiger1.jpg";
+                        }
+                        else if (x.toLowerCase()=="female" || x.toLowerCase()=="woman") {
+                                document.getElementById("userInput").innerHTML = x;
+                                document.getElementById("result").innerHTML="Hello madam!";
+
+                                 document.getElementById("image1").src = "Images/smiley.gif";
+                        }     
+                        else {
+                                document.getElementById("result").innerHTML="Hello robot!";
+                        }
+
+                }
+
+                function clean () {
+                        document.getElementById("userInput").innerHTML = "";
+                        document.getElementById("result").innerHTML = "";
+                        document.getElementById("image1").src = "";
+                }
+                
+                </script>
+
+</head>
+
+<body>
+        <h1>Conditional Statements Demo</h1>
+
+        <button onclick="ask()">Click Me</button>
+
+        <button onclick="clean()">Clean</button>
+        <p>
+                input: <span id="userInput"></span>
+        </p>
+        <p>
+                Result: <span id="result"></span>
+                <br> <img id="image1" src="">
+        </p>
+
+</body>
+
+</html>

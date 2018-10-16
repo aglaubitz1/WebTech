@@ -13,8 +13,8 @@
             }
         </style>
         <script type="text/javascript">
-        function enlarge(){
-            let i = document.getElementById("map");
+        function enlarge(x){
+            let i = document.getElementById(x);
             let w = i.width;
             //alert(w);
             i.width = w * (1 + 0.5);
@@ -22,10 +22,18 @@
             i.style.border= "red 1px solid";
         }
 
-        function shrink() {
-            let i = document.getElementById("map");
+        function shrink(y) {
+            let i = document.getElementById(y);
             let w = i.width;
             i.width = w / (1 + 0.5);
+            i.style.border="none";
+        }
+
+        function check () {
+            let i = document.getElementById(x);
+            let w = i.width;
+            i.width = w / (1 + 0.5);
+            i.style.border="none";
         }
         </script>
     </head>
@@ -33,13 +41,15 @@
     <body>
 
         <h2> Manipulating Styles and Images </h2>
+        <button onclick="check()">Check X</button>
 
-        <p><img src="Images/usa.png" alt="Image goes here" title="map of USA" width="400" onmouseover="enlarge()" onmouseout="shrink()" id="map"></p>
+        <p><img src="Images/usa.png" alt="Image goes here" title="map of USA" width="400" onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)" id="map"></p>
 
         <hr>
 
-        <p><img src="Images/beaver.jpg" onmouseover="enlarge()" onmouseout="shrink()" id="second"></p>
+        <p><img src="Images/beaver.jpg" onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)" id="second"></p>
 
+        <p><img src="Images/tiger1.jpg" width="400" onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)" id="tiger"></p>
     </body>
 
 </html>

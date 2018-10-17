@@ -3,11 +3,11 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>CS13-InClass</title>
+        <title>CS14-InClass</title>
         <style type="text/css">
             h1 {
                 text-align: center;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-family: Lucida Handwriting;
                 font-weight: bold;
             }
             p {
@@ -22,33 +22,39 @@
 
 
         <script type="text/javascript">
-         function ask() {
-          let x = prompt("Which is your favorite leaf? Thyme, Maple, Clover, or Shamrock?")
-                        if (x.toLowerCase() == "thyme") {
-                                document.getElementById("leafimage").src="Images/thyme.jpg";
-                        }
-                        else if (x.toLowerCase()=="maple") {
-                                 document.getElementById("leafimage").src="Images/maple.jpg";
-                        }     
-                        else if (x.toLowerCase()=="clover") {
-                                document.getElementById("leafimage").src="Images/clover.jpg";
-                        }
-                        else if (x.toLowerCase()=="shamrock") {
-                                document.getElementById("leafimage").src="Images/shamrock.jpg";
-                        }
-
-                        }
+            function imgchange() {
+                var i = prompt("Enter a leaf name");
+                var x = document.getElementById("img1");
+                if (i.toLowerCase() == "maple") {
+                    x.src = "images/maple.jpg";
+                    x.title = "Maple";
+                }
+                else if (i.toLowerCase() == "clover") {
+                    x.src = "images/clover.jpg";
+                    x.title = "Clover";
+                }
+                else if (i.toLowerCase() == "thyme") {
+                    x.src = "images/thyme.jpg";
+                    x.title = "Thyme";
+                }
+                else if (i.toLowerCase() == "shamrock") {
+                    x.src = "images/shamrock.jpg";
+                    x.title = "Shamrock";
+                }
+                else {
+                    alert("Input is incorrect");
+                }
+            }
         </script>
     </head>
 
     <body>
         <h1> Changing Images Using User inputs - Click on Image below to start</h1>
-        <button onclick="ask()">Click Me!</button>
         <p>
-            <img src="" alt="Click above to see the image of your choice" title="" id="leafimage"/>
+            <img id="img1" onclick="imgchange()" src="" alt="Click here to see the image of your choice" title="" />
         </p>
 
-        <a href="low.html">Low.html</a>
+        <a href="low.htm">List of Work</a>
     </body>
 
 </html>

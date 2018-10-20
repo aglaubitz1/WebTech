@@ -36,9 +36,14 @@
         </style>
 
         <script type="text/JavaScript">
-            function imgchange() {
-                var x = document.getElementById("img1");
-               
+            function changeimg() {
+                let shepherd = document.getElementbyId("GermanShepherd");
+                let penguin = document.getElementbyId("Penguin");
+                let leopard = document.getElementbyId("SnowLeopard");
+                let lynx = document.getElementbyId("last");
+
+                if (id == "GermanShepherd") {
+                    document.getElementbyId("animal").src="shepherd.jpg";
                 }
             }
         </script>
@@ -48,13 +53,13 @@
     <body>
         <h1> The Animal Name Goes Here</h1>
         <p class="cent">
-            <img src="" alt="Image Goes Here" title="Animal Name" />
+            <img src="" alt="Image Goes Here" title="Animal Name" id="animal" />
         </p>
         <p class="cent">
-            <button onclick="imgchange()" id="Shepard">German Shepherd</button>
-            <button onclick="imgchange()" id="Penguin">Penguin</button>
-            <button onclick="imgchange()" id="Leopard">Snow Leopard</button>
-            <button id="last">Lynx</button>
+            <button onclick=changeimg() id="GermanShepherd">German Shepherd</button>
+            <button onclick=changeimg() id="Penguin">Penguin</button>
+            <button onclick=changeimg() id="SnowLeopard">Snow Leopard</button>
+            <button onclick=changeimg() id="last">Lynx</button>
         </p>
         <p id="inst">The homework is graded out of 25 points. Please create the functionality, using JavaScript, to do the following:</p>
         <ul>

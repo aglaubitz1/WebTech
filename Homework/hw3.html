@@ -36,30 +36,69 @@
         </style>
 
         <script type="text/JavaScript">
-            function changeimg(id) {
-                let shepherd = document.getElementbyId("GermanShepherd");
-                let penguin = document.getElementbyId("Penguin");
-                let leopard = document.getElementbyId("SnowLeopard");
-                let lynx = document.getElementbyId("last");
-
-                if (id == "GermanShepherd") {
-                    document.getElementbyId("animal").src="shepherd.jpg";
+            function changeimg(x) {
+                let i = document.getElementById("animal");
+                // alert("here");
+                if (x=='1'){
+                    document.getElementById("Top").innerHTML = "German Shepard";
+                    i.src="shepherd.jpg";
+                    i.style.borderColor = "Yellow";
+                    document.getElementById("GermanShepherd").style.backgroundColor = "silver";
+                    document.getElementById("Penguin").style.backgroundColor = "white";
+                    document.getElementById("SnowLeopard").style.backgroundColor = "white";
+                    document.getElementById("last").style.backgroundColor = "white";
                 }
+                else if (x=='2') {
+                    document.getElementById("Top").innerHTML = "Penguin";
+                    i.src="penguin.jpg"; 
+                    i.style.borderColor = "Red";
+                    document.getElementById("GermanShepherd").style.backgroundColor = "white";
+                    document.getElementById("Penguin").style.backgroundColor = "silver";
+                    document.getElementById("SnowLeopard").style.backgroundColor = "white";
+                    document.getElementById("last").style.backgroundColor = "white";
+                }
+                else if (x=='3') {
+                    document.getElementById("Top").innerHTML = "Snow Leopard";
+                    i.src="snowleopard.jpg";
+                    i.style.borderColor = "green";
+                    document.getElementById("GermanShepherd").style.backgroundColor = "white";
+                    document.getElementById("Penguin").style.backgroundColor = "white";
+                    document.getElementById("SnowLeopard").style.backgroundColor = "silver";
+                    document.getElementById("last").style.backgroundColor = "white";
+                }
+                else if (x=='4') {
+                    document.getElementById("Top").innerHTML = "Lynx";
+                    i.src="lynx.jpg";
+                    i.style.borderColor = "lime";
+                    document.getElementById("GermanShepherd").style.backgroundColor = "white";
+                    document.getElementById("Penguin").style.backgroundColor = "white";
+                    document.getElementById("SnowLeopard").style.backgroundColor = "white";
+                    document.getElementById("last").style.backgroundColor = "silver";
+                }
+                
             }
+
+            function size (images, number) {
+                let a = document.getElementById("animal");
+                if (number == "1"){
+                    a.width=a.width*1.75; }
+                else {a.width=a.width/1.75; }
+            }
+            
         </script>
 
     </head>
 
     <body>
-        <h1> The Animal Name Goes Here</h1>
+        <h1 id="Top"> The Animal Name Goes Here</h1>
         <p class="cent">
-            <img src="" alt="Image Goes Here" title="Animal Name" id="animal" />
+            <img src="" alt="Image Goes Here" title="Animal Name" id="animal" onmouseover="size(this.id, '1')" onmouseout="size(this.id, '2')" />
         </p>
         <p class="cent">
-            <button onclick=changeimg() id="GermanShepherd">German Shepherd</button>
-            <button onclick=changeimg() id="Penguin">Penguin</button>
-            <button onclick=changeimg() id="SnowLeopard">Snow Leopard</button>
-            <button onclick=changeimg() id="last">Lynx</button>
+            <button onclick="changeimg('1')" id="GermanShepherd">German Shepherd</button>
+            <button onclick="changeimg('2')" id="Penguin">Penguin</button>
+            <button onclick="changeimg('3')" id="SnowLeopard">Snow Leopard</button>
+            <button onclick="changeimg('4')" id="last">Lynx</button>
         </p>
         <p id="inst">The homework is graded out of 25 points. Please create the functionality, using JavaScript, to do the following:</p>
         <ul>

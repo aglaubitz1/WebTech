@@ -34,8 +34,13 @@
                     alert("You did not enter a valid age!");
                 }
                 else {
-                    let message = "Name: " + fullName + "\nAge: " + age + "\nGender: " + gender;
-
+                    let message;
+                    if (myForm.noAge.checked){
+                        message = "Name: " + fullName + "\nGender: " + gender;
+                    }
+                    else{
+                        message = "Name: " + fullName + "\nAge: " + age + "\nGender: " + gender;
+                    }
                     myForm.result.value = message;
                 }
                
@@ -68,7 +73,7 @@
                 <textarea name="result" cols="40" rows="3" id="result"></textarea>
             </p>
             <p> I don't want to tell you my age.
-                <input type="checkbox" name="noage" id="noage">
+                <input type="checkbox" name="noAge">
             </p>
             <p>
                 <input type="submit" name="submit" value="Show Me" style="width:100px;height:40px" onclick=" return results()" />

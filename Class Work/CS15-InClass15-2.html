@@ -25,13 +25,35 @@
         </style>
 
         <script type="text/javascript">
+        function tempconvert() {
             let myForm = document.getElementById("temp");
             let cel = myForm.cel.value;
             let far = myForm.far.value;
+            cel = parseFloat(cel);
+            far = parseFloat(far);
 
-            if (isNaN(cel) && far>=0){
-                cel = ((far-32)*(5/9));
+            if ((cel.length == 0) && (far.length == 0)) {
+                alert("You must enter a value!");
             }
+
+            else if ((isNaN(cel)) && (isNaN(far))) {
+                    alert("You did not enter a valid number!");
+                }
+
+            else {
+               if ((far.length=="") && (isNaN(cel))){
+                cel = ((far-32)*(5/9));
+                myForm.cel.value = message;
+                }
+                if ((cel.length=="") && (isNaN(far))){
+                    far = ((cel*(9/5)+32));
+                    myForm.far.value = message;
+                }
+            }
+
+            return false;
+        }
+
         </script>
 
     </head>
@@ -45,7 +67,7 @@
             </div>
 
             <div style="margin-left:100px">
-                <input type="submit" name="submit" value="Convert" style="width:80px; height:40px;" onclick = tempconvert()/>
+                <input type="submit" name="submit" value="Convert" style="width:80px; height:40px;" onclick = "return tempconvert()"/>
                 <input type="reset" name="reset" value="Clear" style="width:80px; height:40px;" />
             </div>
         </form>

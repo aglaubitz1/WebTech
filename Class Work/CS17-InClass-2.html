@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Scrolling Text</title>
+        <style type="text/css">
+            h1 {
+                text-align: center;
+            }
+            h2#msg {
+                position: absolute;
+                color: Navy;
+                font-family: Arial;
+                width: auto;
+            }
+            div {
+                border: 1px solid black;
+                height: 50px;
+                margin-left: 300px;
+                margin-right: 300px;
+                background-color: Yellow;
+            }
+        </style>
+
+        <script type="text/javascript">
+
+            var p = 305; k = 0;
+            var messageList = new Array("Hey Jude, don't make it bad", "Take a sad song and make it better", "Remember to let her into your heart", "Then you can start to make it better")
+            
+            function doScroll(){
+                document.getElementById("msg").style.left = p + "px";
+                if (p>700){
+                    p=300;
+                    k++;
+                    if (k == messageList.length){
+                        k=0;
+                    }
+                document.getElementById("msg").innerHTML = messageList[k];
+                document.getElementById("msg").style.left = p +"px";
+                }
+                else{
+                    p = p+1;
+                }
+                setTimeout("doScroll()", 5)
+            }
+            
+
+        </script>
+    </head>
+
+    <body onload = "doScroll()">
+        <h1> Moving Text</h1>
+        <div>
+            <h2 id="msg"></h2>
+        </div>
+    </body>
+
+</html>

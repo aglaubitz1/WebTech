@@ -24,17 +24,20 @@
         </style>
         <script type="text/javascript">
             function calc() {
+                
+                let f = document.getElementById("myform")
+                x = parseInt(f.from.value);
+                y = parseInt(f.to.value);
                 let sum = 0;
-                x = document.getElementById("x").value;
-                y = document.getElementById("y").value;
 
 
 
-                    for (let i=0; i<=n; i++) {
-                        if (i*i==0)
-                        sum = sum + i;
+                    for (let i=x; i<=y; i++) {
+                        sum  += i*i;
                     }
                     document.getElementById("result").innerHTML = sum;
+
+                    return false;
                     
             }
 
@@ -45,12 +48,12 @@
         <h1> Another Simple Calculator</h1>
         <p> Please use <b>for</b> loop to sum up <strong>squares</strong> of all the integers between these two
             numbers (inclusive). </p>
-        <form action="" method="post">
+        <form action="" method="post" id="myform">
             <p id="p1">
                 From: <input type="text" name="from" size="10" id="x" /> To: <input type="text" name="to" size="10" id="y" />
             </p>
             <p>
-                <button onclick="calc()">Sum</button>
+                <input type="submit" name="Sum" value="Sum" onclick="calc()" />
                 <input type="reset" name="reset" value="Clear" />
             </p>
 

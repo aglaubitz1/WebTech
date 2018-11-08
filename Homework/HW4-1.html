@@ -35,13 +35,7 @@
                 let word1 = document.getElementById("w1");
                 let word2 = document.getElementById("w2");
                 let word3 = document.getElementById("w3");
-                if (word1.value=="") {
-                    alert ("You must select a valid word.")
-                }
-                else if (word2.value=="") {
-                    alert ("You must select a valid word");
-                }
-                else if (word3.value=="") {
+                if ((word1.value=="") || (word2.value=="") || (word3.value=="")) {
                     alert ("You must select a valid word.");
                 }
                 else {

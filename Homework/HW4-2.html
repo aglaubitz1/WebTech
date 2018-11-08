@@ -39,12 +39,18 @@
 
 		<script type="text/javascript">
 			/* Your JavaScript goes here */
-			var interval = setInterval(function animation() {
-				clearInterval ("end");
-				document.getElementById("")
-				
-				
-							})
+			let time = 20;
+			function animation () {
+				let end = document.getElementById("end").value;
+				if(time==end) {
+					alert ("You have reached the end point.");
+				}
+				else{
+					--time;
+				}
+				document.getElementById("number").innerHTML = time;
+				setTimeout("animation()",500);
+			}
 		</script>
 	</head>
 

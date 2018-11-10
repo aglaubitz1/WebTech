@@ -1,0 +1,25 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+p::first-letter {
+    font-size: 200%;
+}
+p.logo {
+    text-align: center;
+}
+tr.sitelinks {
+    text-align: center;
+}
+div.center {
+    text-align: center;
+    font-size: 18px;
+}
+span.heading {
+    font-size: 25px;
+}
+h2.category {
+    font-size: 30px;
+}
+tr.border {
+    border: black, solid, 20px;
+}

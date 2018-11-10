@@ -4,15 +4,17 @@
 <head>
         <meta charset="UTF-8">
         <title>Homepage</title>
+        <link rel="stylesheet" type="text/css" href="FullLifeStyle.css">
+        <style type="text/css"></style>
 </head>
 
 <body>
     <table>
     <tr>
-        <td colspan="7"><img src="Logo.jpg" alt="logo" title="logo" height="25%" width="40%"></td>
+        <td colspan="7"><p class="logo"><img src="Logo.jpg" alt="logo" title="logo" height="25%" width="40%"></p></td>
     </tr>
 
-    <tr>
+    <tr class="sitelinks">
             <td><a href="index.html">Home</a></td>
             <td><a href="Sitemap.html">Sitemap</a></td>
             <td><a href="Contact Me.html">Contact Me</a></td>
@@ -23,19 +25,25 @@
     </tr>
     </table>
     
-        <P><h1>Contact:</h1><br>
-        anneliese@fulllifeeats.com</P>
+        <div id="contact">
+        <p><h1>Contact:</h1><br>
+        anneliese@fulllifeeats.com</p>
+        <p>Let me know if you have questions or feedback! I'd love to hear from you!</p>
+        <p>Email me or fill out the form below, and I'll get back to you soon.</p>
             <br>
         <form>
             <p>
                 <h1>Feedback and Comments:</h1><br>
-                <input type="text" name="name" maxlength="400" size="25" value="Name"><br>
+                Name: <input type="text" name="name" maxlength="400" size="25"><br>
                 <br>
-                <input type="text" name="email" maxlength="400" size="25" value="Email"><br>
+                Email: <input type="text" name="email" maxlength="400" size="25"><br>
                 <br>
-                <input type="text" name="comments" maxlength="400" size="25" value="Feedback and Comments"><br>
+                <span>Feedback:</span> <textarea cols="50" rows="3" name="comments" value="Feedback and Comments"></textarea><br>
+                <br>
+                <button type="submit">Submit</button>
             </p>
         </form>
+        </div>
           
 
     

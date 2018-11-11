@@ -44,3 +44,10 @@ div#contact {
     text-align: center;
     
 }
+tr#photoscenter {
+    align-content: center;
+}
+#yellow {
+    background-color: lightgoldenrodyellow;
+}
+

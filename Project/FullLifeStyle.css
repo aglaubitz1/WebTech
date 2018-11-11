@@ -47,7 +47,9 @@ div#contact {
 tr#photoscenter {
     align-content: center;
 }
-#yellow {
+.yellow {
     background-color: lightgoldenrodyellow;
 }
-
+p.center {
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQuery Template File</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style type="text/css">
+        #circle {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 50%;
+        }
+        #square {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+
+     
+  
+    $(document).ready(function () {
+        // $("#circle").click(function () {
+        //     $(this).css("background-color", "blue");
+        //     $("square").text("It's not me!");
+
+        // })
+
+        $("#square").click(function () {
+            $(this).text("");
+            alert("a square was clicked!");
+        })
+
+        $("#circle").draggable();
+            
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="circle"></div>
+    <br>
+    <div id="square"></div>
+
+
+</body>
+
+</html>

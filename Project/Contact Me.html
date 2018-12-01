@@ -6,6 +6,18 @@
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="FullLifeStyle.css">
         <style type="text/css"></style>
+        <script type="text/javascript">
+            function validate () {
+                let myForm = document.getElementById("contactme");
+                let Name = myForm.name.value;
+                let Email = myForm.email.value;
+                let Feedback = myForm.comments.value;
+
+                if ((Name.length == 0) || (Email.length == 0) || (Feedback.length == 0)) {
+                    alert("You did not finish the form yet!");
+                }
+            }
+        </script>
 </head>
 
 <body>
@@ -31,7 +43,7 @@
         <p>Let me know if you have questions or feedback! I'd love to hear from you - recipe ideas, wellness questions, recovery, anything!</p>
         <p>Email me or fill out the form below, and I'll get back to you soon.</p>
             <br>
-        <form>
+        <form id="contactme">
             <p>
                 <h1>Feedback and Comments:</h1><br>
                 Name: <input type="text" name="name" maxlength="400" size="25"><br>
@@ -40,7 +52,7 @@
                 <br>
                 <span>Feedback:</span> <textarea cols="50" rows="3" name="comments" value="Feedback and Comments"></textarea><br>
                 <br>
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="return validate()">Submit</button>
             </p>
         </form>
         </div>

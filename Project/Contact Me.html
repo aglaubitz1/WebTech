@@ -14,8 +14,12 @@
                 let Feedback = myForm.comments.value;
 
                 if ((Name.length == 0) || (Email.length == 0) || (Feedback.length == 0)) {
-                    alert("You did not finish the form yet!");
+                    alert("Please finish the form!");
                 }
+            }
+
+            function email () {
+                
             }
         </script>
 </head>
@@ -38,8 +42,8 @@
     </table>
     
         <div id="contact">
-        <p><h1>Contact:</h1><br>
-        anneliese@fulllifeeats.com</p>
+        <p><h1>Contact:</h1><br></p>
+        <p onclick="email()">Email Me!</p>
         <p>Let me know if you have questions or feedback! I'd love to hear from you - recipe ideas, wellness questions, recovery, anything!</p>
         <p>Email me or fill out the form below, and I'll get back to you soon.</p>
             <br>

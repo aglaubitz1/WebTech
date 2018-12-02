@@ -6,12 +6,17 @@
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="FullLifeStyle.css">
         <style type="text/css"></style>
+        <script type="text/javascript">
+            function changeColor () {
+                document.getElementById("changeColor").style.backgroundColor = "light-yellow";
+            }
+        </script>
 </head>
 
 <body>
     <table>
     <tr>
-        <td colspan="7"><p class="logo"><img src="Logo.jpg" alt="Full Life Eats Logo" title="Full Life Eats Logo" height="25%" width="40%"></p></td>
+        <td colspan="7" onclick="changeColor()" class="changeColor"><p class="logo"><img src="Logo.jpg" alt="Full Life Eats Logo" title="Full Life Eats Logo" height="25%" width="40%"></p></td>
     </tr>
     <hr>
 

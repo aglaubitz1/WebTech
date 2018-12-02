@@ -6,6 +6,34 @@
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="FullLifeStyle.css">
         <style type="text/css"></style>
+        <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n< 1) {slideIndex = slides.length}
+                for (i=0; i<slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += "active";
+            }
+        </script>
 </head>
 
 <body>
@@ -28,8 +56,164 @@
     <h1 align="center">Blogposts</h1>
     <br>
     <div class="yellow">
-            <h2>Power of Positivity for Personal Wellness - 11/11/2018</h2>
-            </div>
+        <h2>YAY 22! 22 Things I’ve Been Grateful for This Past Year - 11/23/2018</h2>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1/15</div>
+            <img src="Images/Grateful/IMG_0004.JPG" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2/15</div>
+            <img src="Images/Grateful/IMG_0888.JPG" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3/15</div>
+            <img src="Images/Grateful/IMG_1530.PNG" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4/15</div>
+            <img src="Images/Grateful/IMG_1532.jpg" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5/15</div>
+            <img src="Images/Grateful/IMG_1685.jpg" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6/15</div>
+            <img src="Images/Grateful/IMG_2120.PNG" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7/15</div>
+            <img src="Images/Grateful/IMG_2437.jpg" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8/15</div>
+            <img src="Images/Grateful/IMG_2496.JPG" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">9/15</div>
+            <img src="Images/Grateful/IMG_2503.JPG" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">10/15</div>
+            <img src="Images/Grateful/IMG_2680.jpg" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">11/15</div>
+            <img src="Images/Grateful/IMG_2755.jpg" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">12/15</div>
+            <img src="Images/Grateful/IMG_2768.jpg" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">13/15</div>
+            <img src="Images/Grateful/IMG_2963.JPG" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">14/15</div>
+            <img src="Images/Grateful/IMG_2884.JPG" style="width:100%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">15/15</div>
+            <img src="Images/Grateful/IMG_8826.JPG" style="width:100%" height="100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+    <span class="dot" onclick="currentSlide(14)"></span>
+    <span class="dot" onclick="currentSlide(15)"></span>
+</div>
+
+        <p class="letter">
+            For people living with an eating disorder or not, the holidays can be tough to manage. They’re often focused around food and people are constantly talking about their own diets and commenting on how others eat. A birthday is no exception for this overwhelming feeling. My 22nd was the day after Thanksgiving making it double the holidays, but it was filled with smiles and laughter none the less. And 22 is the best when you shamelessly get to sing Taylor Swift and have a mini-dance party to celebrate feelin’ 22! Because reflection and identifying things I am grateful for have been positive and powerful for me over the years, I thought I would share 22 things I am grateful for this past year in honor of my birthday:
+            
+        </p>
+        <br>
+        <p>
+1.	Hugs: Hugs are underrated. Unless you’re one of those people who doesn’t want anyone to touch them, hugs are like little bundles of joy that so easily brighten up your day. I always felt a little more cared for, a little happier, and a little more loved with every hug this year.
+<br>
+2.	Learning how to open up: I’ve never been one to open up about my emotions and feelings, and over the years the negatives of this have outweighed the positives. I am grateful for friends that allow me to open up and talk without judgement. 
+<br>
+3.	New friends: This past year I’ve really found my group and the people who support me wholeheartedly. A mix of new and old, I’m thankful for them both, and especially thankful for somehow meeting these people.
+<br>
+4.	Sunshine: While starting to consciously pay attention to small things to be grateful for, I have noticed how grateful I am for the sunshine. The bright light puts me in a better mood and gives me something to smile about as I look out my window or walk to class!
+<br>
+5.	Exercising for mental health, not physical appearance: This is the biggest lesson I’ve finally conquered this year. With all of the messages out there about exercising solely to “burn off that cupcake” or “get back on track after the holidays” it was always in my mind that exercise was mainly used to look different. But instead, I’ve focused on using exercise as an anxiety reducer, making exercise more fun, relieving, and positive.
+<br>
+6.	Studying abroad: Studying in Copenhagen was a life changing experience this past year. I gained independence, found some new passions, and felt confident in my ability to handle anything. By far I am most grateful for my loving host family who welcomed me into their family with open arms.
+<br>
+7.	Every day is a new day: This is my daily mantra. It is so important to me to realize that no matter what happens today, tomorrow has the opportunity to be better and the past is irrelevant. I am grateful to be able to start over each day with a positive attitude and mindset.
+<br>
+8.	People will always be there for you if you ask: While I used to think I was a burden to many, I realized asking never hurt and people will be there for you if they really care. I am grateful for those that have been there when I’ve asked for help this past year. 
+<br>
+9.	Coaching Girls on the Run: Being part of GOTR has given me happiness, confidence, and laughter. I am grateful for being able to coach amazing girls this year and teach them about their own self-confidence and worth. They sure improved mine!
+<br>
+10.	Trying new recipes and getting creative: This past year I have been more creative in the kitchen than I ever have in the past, and I love it! Cooking gives me joy, and I love experimenting and taking risks to see what works.
+<br>
+11.	Giving and getting random compliments: I am grateful for the way compliments can brighten your day and everyone else’s. Go do this today!!
+<br>
+12.	Daily routine and healthy habits: Having a daily routine filled with healthy habits has changed my life. By putting myself first and taking care of myself, I am able to live happily and more stress-free!
+<br>
+13.	Smiles: I am grateful for all of the smiles I’ve gotten this past year. They are contagious and it always makes me smile to see others doing the same. 
+<br>
+14.	Finding enjoyment in small things like curling up with a book: I love reading! This past year I’ve really gotten back into it and it has been a great way for me to escape any stress. 
+<br>
+15.	Waking up and getting out of bed each morning: As simple as this sounds, sometimes getting out of bed is hard when you struggle with mental health. I am grateful for all the days I got out of bed and went about my day, despite my brain not wanting to. 
+<br>
+16.	Being able to move and eat in a way that feels good and nourishing: While this seems simple to most, it is something we all often take for granted. Self-care is the most important part of my day and gives me more positivity and better days.
+<br>
+17.	Experiencing emotions: I am grateful to be able to experience all emotions, good and bad. No more numbing, just feeling and accepting it.
+<br>
+18.	Sunrises: Just like being grateful for the sunshine, sunrises are beautiful and often missed. But I’ve grateful this year for the days I wake up and enjoy the sunrise with a book and tea in hand. 
+<br>
+19.	Going home and holding my puppy: Animals are best friends – they give the best furry hugs, always listen without judgement, and always seem to be there when you need them.
+<br>
+20.	Hot tea: Hot tea has always been the one thing that calms my anxiety. It’s like comfort and a hug for me, and something that is so easily available.
+<br>
+21.	Yoga restoration and stretching: While I don’t love hot yoga or doing difficult yoga classes, I’ve been grateful for discovering the power of restorative yoga and stretching. It is relaxing and always gets me back on track.
+<br>
+22.	Being me! I am eternally grateful to be alive and be the person I am today. I only have one life, one body, and one mind and heart so I am grateful for the chance to take care of it unapologetically each day. 
+
+        </p>
+    <br><hr>
+    <div class="yellow">
+        <h2>Power of Positivity for Personal Wellness - 11/11/2018</h2>
+    </div>
             <p class="letter">
                     It is too often taken for granted how much positivity and gratitude can do for happiness and wellness. And a big part of positivity and gratitude is self-care and self-love. I never prioritized self-love growing up. I overworked myself, I put others before me. I have always been a positive person and kind to those around me, but that kindness and gratitude towards others never seemed to translate to myself. The biggest lesson I have learned through my recovery journey is how to prioritize being grateful for what I have and who I am. I have learned to take care of myself through nourishment, a group of great friends, and being more aware of the good things in life. When I shifted my focus to prioritize the positive experiences, I started to become happier and recovery started to become easier. My ED over the years ignored my body’s need to be cared for and thanked, and instead told me that I was stronger than my hunger and that an image was more important than food and a full life. But now I focus on letting my pile of good things grow. I challenge the negative thoughts into something positive – always knowing everything will be okay and eating will give me the nourishment I need to be strong and healthy.<br> 
                     <br>

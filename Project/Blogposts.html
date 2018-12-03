@@ -6,34 +6,7 @@
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="FullLifeStyle.css">
         <style type="text/css"></style>
-        <script type="text/javascript">
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n< 1) {slideIndex = slides.length}
-                for (i=0; i<slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace("active", "");
-                }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += "active";
-            }
-        </script>
+       
 </head>
 
 <body>
@@ -61,79 +34,81 @@
 
     <div class="slideshow-container">
 
+        
         <div class="mySlides fade">
+            
             <div class="numbertext">1/15</div>
-            <img src="Images/Grateful/IMG_0004.JPG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_0004.JPG" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2/15</div>
-            <img src="Images/Grateful/IMG_0888.JPG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_0888.JPG" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3/15</div>
-            <img src="Images/Grateful/IMG_1530.PNG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_1530.PNG" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">4/15</div>
-            <img src="Images/Grateful/IMG_1532.jpg" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_1532.jpg" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">5/15</div>
-            <img src="Images/Grateful/IMG_1685.jpg" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_0832.jpg" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">6/15</div>
-            <img src="Images/Grateful/IMG_2120.PNG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_2120.PNG" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">7/15</div>
-            <img src="Images/Grateful/IMG_2437.jpg" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_0039.jpg" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">8/15</div>
-            <img src="Images/Grateful/IMG_2496.JPG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_2496.JPG" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">9/15</div>
-            <img src="Images/Grateful/IMG_2503.JPG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_2503.JPG" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">10/15</div>
-            <img src="Images/Grateful/IMG_2680.jpg" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_2680.jpg" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">11/15</div>
-            <img src="Images/Grateful/IMG_2755.jpg" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_2755.jpg" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">12/15</div>
-            <img src="Images/Grateful/IMG_2768.jpg" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_2768.jpg" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">13/15</div>
-            <img src="Images/Grateful/IMG_2963.JPG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_2963.JPG" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">14/15</div>
-            <img src="Images/Grateful/IMG_2884.JPG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_2884.JPG" width="50%" height="50%">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">15/15</div>
-            <img src="Images/Grateful/IMG_8826.JPG" style="width:100%" height="100%">
+            <img src="Images/Grateful/IMG_8826.JPG" width="50%" height="50%">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -291,5 +266,33 @@ Send me a message with some of your favorite grocery staples! What do you always
 
     <br>
     
+    <script type="text/javascript">
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n< 1) {slideIndex = slides.length}
+            for (i=0; i<slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += "active";
+        }
+    </script>
 </body>
 </html>

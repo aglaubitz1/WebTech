@@ -64,6 +64,7 @@ a {
 }
 .mySlides {
     display: none;
+    text-align: center;
 }
 .prev,.next {
     cursor: pointer;

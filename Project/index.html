@@ -10,6 +10,18 @@
             function changeColor () {
                 document.getElementById("changeColor").style.backgroundColor = "lightgoldenrodyellow";
             }
+            function red () {
+                document.getElementById("red").style.color = "red";
+            } 
+            function removeColor () {
+                document.getElementById("red").style.color = "purple";
+            }
+            function red2 () {
+                document.getElementById("red2").style.color = "red";
+            }
+            function removeColor2 () {
+                document.getElementById("red2").style.color = "purple";
+            }
         </script>
 </head>
 
@@ -47,8 +59,9 @@
                 <p class="letter"> For people living with an eating disorder or not, the holidays can be tough to manage. They’re often focused around food and people are constantly talking about their own diets and commenting on how others eat. A birthday is no exception for this overwhelming feeling. My 22nd was the day after Thanksgiving making it double the holidays, but it was filled with smiles and laughter none the less. And 22 is the best when you shamelessly get to sing Taylor Swift and have a mini-dance party to celebrate feelin’ 22! Because reflection and identifying things I am grateful for have been positive and powerful for me over the years, I thought I would share 22 things I am grateful for this past year in honor of my birthday:</p><br>
                 <a href="Blogposts.html">Read More...</a>
             </td>
-            <td width="30%"><p id="me"><img id="me" src="Images/IMG_1825.JPG" height="200px" width="160px" alt="Anneliese" title="Anneliese"></p><br>
-                <p>Welcome to Full Life Eats! My name is Anneliese, and this is my blog where I celebrate my love for cooking and baking. Follow along while I share my favorite <a href="Recipes.html">recipes</a> and experiences on gaining back a full life through eating disorder recovery. Feel free to learn more about <a href="About Me.html">my story</a> and browse through my recipes, focused on real food, balance, and wellness.</p>
+            <td width="30%">
+                <p id="me"><a href="About Me.html"><img id="me" src="Images/IMG_1825.JPG" height="200px" width="160px" alt="Anneliese" title="Anneliese"></a></p><br>
+                <p>Welcome to Full Life Eats! My name is Anneliese, and this is my blog where I celebrate my love for cooking and baking. Follow along while I share my favorite <a href="Recipes.html" onmouseover="red()" id="red" onmouseout="removeColor()">recipes</a> and experiences on gaining back a full life through eating disorder recovery. Feel free to learn more about <a href="About Me.html" onmouseover="red2()" id="red2" onmouseout="removeColor2()">my story</a> and browse through my recipes, focused on real food, balance, and wellness.</p>
             </td>
         </tr>
         <tr class="border">

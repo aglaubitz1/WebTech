@@ -6,6 +6,8 @@
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="FullLifeStyle.css">
         <style type="text/css"></style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script type="text/javascript">
             function validate () {
                 let myForm = document.getElementById("contactme");
@@ -21,6 +23,13 @@
             function email () {
                 document.getElementById("textchange").innerHTML = 'anneliese@fulllifeeats.com';
             }
+      
+            $(document).ready(function() {
+                $("#flip").click(function() {
+
+                    $("#panel").slideDown("slow");
+                });
+            });
         </script>
 </head>
 
@@ -47,9 +56,11 @@
         <p>Let me know if you have questions or feedback! I'd love to hear from you - recipe ideas, wellness questions, recovery, anything!</p>
         <p>I'll get back to you as soon as I can!</p>
             <br>
-        <form id="contactme">
-            <p>
-                <h1>Feedback and Comments:</h1><br>
+           
+                <div id="flip"><h1>Feedback and Comments:</h1></div>
+                <br>
+                <div id="panel">
+                <form id="contactme">
                 Name: <input type="text" name="name" maxlength="400" size="25"><br>
                 <br>
                 Email: <input type="text" name="email" maxlength="400" size="25"><br>
@@ -57,8 +68,9 @@
                 <span>Feedback:</span> <textarea cols="50" rows="3" name="comments" value="Feedback and Comments"></textarea><br>
                 <br>
                 <button type="submit" onclick="return validate()">Submit</button>
-            </p>
+                </div>
         </form>
+
         </div>
           
 

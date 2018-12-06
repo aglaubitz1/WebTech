@@ -127,3 +127,13 @@ a {
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+
+  #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: lightgoldenrodyellow;
+  }
+#panel {
+    padding: 50px;
+    display: none;
+}
